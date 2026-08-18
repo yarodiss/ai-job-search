@@ -1,0 +1,84 @@
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.count {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.error {
+  color: #b00020;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+th:hover {
+  background: #ececec;
+}
+
+td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+td a {
+  color: #0b5fff;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+.fit-cell {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+tr.fit-high .fit-cell {
+  color: #0a7d32;
+}
+
+tr.fit-medium .fit-cell {
+  color: #a06a00;
+}
+
+tr.fit-low .fit-cell {
+  color: #999;
+}
