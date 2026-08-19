@@ -27,6 +27,19 @@ function App() {
   const [error, setError] = useState(null)
   const [sortKey, setSortKey] = useState('fit')
   const [sortDir, setSortDir] = useState('asc')
+  const [viewedUrls, setViewedUrls] = useState(() => new Set())
+
+  function toggleViewed(url) {
+    setViewedUrls((prev) => {
+      const next = new Set(prev)
+      if (next.has(url)) {
+        next.delete(url)
+      } else {
+        next.add(url)
+      }
+      return next
+    })
+  }
 
   useEffect(() => {
     let cancelled = false
@@ -115,7 +128,11 @@ function App() {
           </thead>
           <tbody>
             {sorted.map((job) => (
-              <tr key={job.url} className={`fit-${job.fit}`}>
+              <tr
+                key={job.url}
+                className={`fit-${job.fit}${viewedUrls.has(job.url) ? ' viewed' : ''}`}
+                onClick={() => toggleViewed(job.url)}
+              >
                 <td className="fit-cell">{job.fit}</td>
                 <td>
                   <a href={job.url} target="_blank" rel="noreferrer">

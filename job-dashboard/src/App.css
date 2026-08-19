@@ -82,3 +82,11 @@ tr.fit-medium .fit-cell {
 tr.fit-low .fit-cell {
   color: #999;
 }
+
+tbody tr {
+  cursor: pointer;
+}
+
+tr.viewed {
+  opacity: 0.5;
+}
