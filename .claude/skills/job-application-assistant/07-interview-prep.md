@@ -39,6 +39,49 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
+## STAR Candidates (Complete Manually)
+<!-- Added by /setup Path A from CV/LinkedIn achievements. Fill in Situation/Task/Action/Result before using in an interview. -->
+
+### Legacy on-prem to AWS migration
+**Source:** CV/LinkedIn - Software Engineer III, Newtech SRL (contracted by Verizon)
+**What happened:** Migrated legacy on-premises server environments to Linux environments on AWS.
+**Why it matters:** Answers questions about cloud migration experience, working with legacy systems, and infrastructure modernization.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Introducing CI/CD, feature flags, and dockerization at BairesDev
+**Source:** CV - Technical Project Lead, BairesDev LLC
+**What happened:** Developed new GitLab CI/CD pipelines, integrated Feature Flags for releases, and worked with DevOps to configure the dockerization process for the team's apps.
+**Why it matters:** Answers questions about driving engineering process improvements, DevOps collaboration, and technical leadership.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Mobile app deployment pipeline (GitLab to VS App Center)
+**Source:** CV/LinkedIn - Senior Software Engineer, BairesDev LLC
+**What happened:** Integrated GitLab pipelines with VS App Center to manage the deployment process of a mobile app, alongside designing the database schema with Prisma.js and integrating Sendgrid and SquareUp.
+**Why it matters:** Answers questions about mobile release engineering, third-party service integration, and end-to-end ownership of a delivery pipeline.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Standardizing code quality and review practices across teams
+**Source:** CV - Technical Project Lead / Full Stack Engineer, BairesDev LLC and Halo Media LLC
+**What happened:** Standardized linting (TSLint) and formatting (Prettier) rules, coordinated code review across team members, and performed ongoing code reviews for other engineers.
+**Why it matters:** Answers questions about establishing engineering standards, mentoring, and maintaining code quality at scale.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"

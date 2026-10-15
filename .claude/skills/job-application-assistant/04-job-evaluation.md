@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** JavaScript/TypeScript, Node.js, Nest.js, Express.js, Angular, RESTful/OpenAPI design, AWS, Docker, CI/CD (GitLab CI/CD, GitHub Actions), code review & technical leadership
+**Moderate match areas:** Next.js, React, React Native, GCP, Kubernetes, Terraform, database/ORM design (PostgreSQL, MongoDB, Prisma.js, TypeORM)
+**Weak match areas:** Not yet identified - update as gaps surface during job evaluations.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Full-stack/backend JavaScript-TypeScript engineering; cloud infrastructure and CI/CD; technical/team leadership in remote software teams (10+ years across Newtech, GBH, BairesDev, Halo Media)
+**Moderate:** Frontend-specialist roles (pure Angular/React); data engineering/ML-adjacent roles
+**Entry-level:** None - 10+ years of professional experience
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +107,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Not targeting one specific title or narrow trajectory - prioritizes strong skill/experience fit and the ability to deliver quickly.
+- Values working with a good, collaborative team he can learn from over a specific sector or company brand.
+- Open to individual-contributor or technical-leadership roles, as long as the fit is strong.
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: Working with good, collaborative people; hands-on delivery; learning from teammates
+- Tasks that drain: Excessive or unnecessary meetings
+- Non-task factors: team-based, collaborative decision-making culture; use of spikes/proof-of-concepts before committing to a technical direction
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently employed full-time; searching passively, not urgently
+- **Flexibility**: Open to remote work and to relocation - no hard geographic constraint
+- **Professional development**: Values learning from good teammates and mentors
 
 ### 6. Salary Benchmark (Optional)
 

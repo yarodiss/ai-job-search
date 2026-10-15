@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Yarodis Ramírez Oliva
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Yarodis Ramírez Oliva, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -16,76 +16,87 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Yarodis Ramírez Oliva
+- **Location:** Santo Domingo, Dominican Republic (open to remote work and to relocation - no hard geographic constraint)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
+  | Spanish | Native |
+  | English | C1 Advanced (Cambridge certified) |
   <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
   working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
   undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
   lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
   04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed full-time (Full Stack Engineer, Halo Media LLC) - exploring new opportunities passively
+- **LinkedIn headline:** "Software Engineer"
 
 ### Education
 <!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Software Engineering (Computer Science)** (2014-2018) - Universidad Acción Pro-Educación y Cultura (UNAPEC)
+  - Topics: Software Engineering, Computer Science fundamentals
 
 ### Professional Experience
 <!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Full Stack Engineer** (Jan 2024 - Present) - **Halo Media LLC** (Remote, New York, United States)
+  - Leads engineering excellence, testing, and QA; performs code reviews and cross-functional communication with clients
+  - Stack: Node.js, AWS, Angular, MongoDB, Nest.js, Payload CMS, Contentful, Strapi
+- **Technical Project Lead / Node.js Engineer / Senior Software Engineer** (Jun 2021 - Jan 2024) - **BairesDev LLC** (Remote, California, United States client)
+  - Introduced CI/CD pipelines, feature flags, and dockerization; standardized code review, linting, and formatting
+  - Built web/mobile apps (React, Next.js, React Native, Nest.js); integrated Prisma.js, Sendgrid, SquareUp
+- **Angular Developer** (Apr 2021 - Jul 2022) - **GBH Solutions** (Santo Domingo, Dominican Republic)
+  - Built and maintained Angular front-end applications; performance auditing and code review
+- **Software Engineer III** (May 2016 - May 2021) - **Newtech SRL, contracted by Verizon** (Santo Domingo, Dominican Republic)
+  - Migrated legacy on-prem environments to AWS; led internal tooling for the E2E Test team; integrated JIRA, qTest, Salesforce, Jenkins
+
+  Full per-role detail and technology lists: `.claude/skills/job-application-assistant/01-candidate-profile.md`
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** JavaScript/TypeScript, Node.js, Nest.js, Express.js, Angular
+- **Secondary:** Next.js, React, React Native, database/ORM design (PostgreSQL, MongoDB, Prisma.js, TypeORM)
+- **Domain:** API design & performance (rate limiting, caching, load balancing), CI/CD & DevOps, technical leadership & code review standards
+- **Software:** AWS, GCP, Docker, Kubernetes, Terraform, Ansible, GitLab CI/CD, GitHub Actions, Jira
 
 ### Certifications
 <!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **AWS Certified Cloud Practitioner** - completed 2019
+- **The Complete Serverless Course (AWS)** - completed 2019
+- **Scrum Foundation Professional Certificate (SFPC)** - completed 2020
+- **C1 Advanced (English)** - UNAPEC, completed 2018
 
 ### Publications
 <!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+None.
 
 ### Awards
 <!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+None on record yet.
 
 ### Behavioral Profile
 <!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Collaborative decision-maker** - prefers team-based decisions over solo/top-down calls
+- **Evidence-first** - validates technical direction with spikes/proof-of-concepts before committing
+- **Strengths:** Delivery-focused execution, technical leadership, cross-functional coordination (Product/QA/DevOps)
+- **Growth areas:** Sensitive to meeting-heavy cultures - frame as a preference for focused, efficient collaboration
+- **Thrives in:** Collaborative teams with good people to learn from; light on unnecessary meetings; supports quick technical spikes before locking in direction
+
+Self-assessed - no formal PI/DISC/Myers-Briggs test on file. Full profile: `.claude/skills/job-application-assistant/02-behavioral-profile.md`
 
 ### What Excites You
 <!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Working with good, collaborative people he can learn from
+- Hands-on delivery and shipping solutions that fit well with his skills
 
 ### Target Sectors
 <!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- No specific target sector - open to any sector where the role is a strong skills/experience fit.
 
 ### Deal-breakers
 <!-- Hard constraints on job search. Language requirements are handled separately and
 automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- None specified - open on location, relocation, and sector; salary expectations not yet set.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

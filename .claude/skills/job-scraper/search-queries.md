@@ -12,13 +12,12 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary (installed CLI tools):
+- **linkedin.com/jobs** - LinkedIn job listings, scoped to Latin America (see Location Filter below); covered by `linkedin-search` CLI. LinkedIn's `--location` takes a place string, not a region facet, so run it per-country/city (e.g. `"Mexico City, Mexico"`, `"Bogota, Colombia"`, `"Sao Paulo, Brazil"`, `"Santo Domingo, Dominican Republic"`, `"San Jose, Costa Rica"`, `"Buenos Aires, Argentina"`) or `"Remote"` combined with a manual location check against the Location Filter below, rather than relying on `"remote"` alone to imply Latin America.
+- **freehire-search** CLI - use `--region latam` (not `latam,global,none`) to scope directly to Latin America-eligible postings; no `site:` line needed.
 
-Secondary (company career pages via Google):
+Secondary (WebSearch fallback, company career pages):
+- indeed.com, glassdoor.com - general boards useful for remote/LATAM roles outside the CLIs above
 - Direct Google searches with `site:` filters for known target companies
 
 ## Query Categories
@@ -27,34 +26,34 @@ Queries are grouped by priority. Write **each category in every language from yo
 
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Full Stack / Backend Engineer (JavaScript/TypeScript)
 
-These match your strongest and most desired career direction.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+These match Yarodis's strongest and most desired career direction.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "Full Stack Engineer" remote
+site:linkedin.com/jobs "Backend Engineer" Node.js remote
+site:linkedin.com/jobs "Node.js Engineer" remote
+site:linkedin.com/jobs "Software Engineer" TypeScript remote Latin America
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: Technical Leadership
 
-Adjacent roles you could pivot into.
+These match his technical leadership / mentoring experience (BairesDev, Halo Media).
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "Technical Lead" Node.js remote
+site:linkedin.com/jobs "Engineering Team Lead" remote
+site:linkedin.com/jobs "Staff Software Engineer" TypeScript remote
+```
+
+### Priority 3: Frontend / Angular (adjacent)
+
+Adjacent roles leaning on his Angular/frontend experience.
+
+```
+site:linkedin.com/jobs "Frontend Engineer" Angular remote
+site:linkedin.com/jobs "Angular Developer" remote Latin America
 ```
 
 ### Priority 4: Broader Technical / Consulting
@@ -62,19 +61,18 @@ site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
 Wider net for general technical roles.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "JavaScript Developer" remote
+site:linkedin.com/jobs "TypeScript Developer" remote
+site:linkedin.com/jobs "technical consultant" Node.js remote
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Scoped to Latin America only (updated 2026-08-18 - narrowed from an initial worldwide/remote scope). Tiers:
+- **Ideal:** Remote roles explicitly open to Latin America (region/country facet `latam`, or posting text naming LatAm countries/"LATAM")
+- **Acceptable:** On-site or hybrid roles based in a Latin American country
+- **Excluded:** Remote roles not open to Latin America (e.g. "Remote - US only", "Remote - EU only"), and on-site roles outside Latin America
+- When a posting's remote eligibility is ambiguous (e.g. "Remote" with no region named), treat it as excluded rather than assuming it covers Latin America - `freehire-search`'s `--region latam` facet or explicit posting text should confirm it.
 
 ## Language Filter
 
